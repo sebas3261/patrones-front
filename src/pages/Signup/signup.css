@@ -1,0 +1,188 @@
+
+
+/* 🧱 Contenedor principal: formulario + imagen */
+.signup-main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 📄 Contenedor del formulario */
+.signup-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* 📝 Formulario */
+.signup-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.signup-form-container h2 {
+  font-size: 4vw;
+  font-weight: 300;
+}
+
+.signup-form-container h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #f35353;
+    margin-bottom: 1rem;
+
+}
+
+.dark .signup-form-container h3, .dark .signup-form-container a {
+  color: #d4808d;
+}
+
+.signup-form-container h3 span {
+    font-size: 1.8vw;
+  font-family: "Itim", "cursive";
+  font-weight: 600;
+}
+
+/* 🧩 Inputs del formulario */
+.signup-form-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #f35353;
+  font-size: 1.2rem;
+}
+
+.dark .signup-form-container input {
+  border: 2px solid white;
+  background-color: #353333;
+  color: white;
+}
+
+/* ✅ Botón */
+.signup-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form-container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f35353;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.dark .signup-form-container button {
+  background-color: #c97681;
+}
+
+.signup-form-container button:hover {
+  background-color: #a63b3b;
+}
+
+/* 🔗 Enlace al login */
+.signup-form-container p {
+    font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.signup-form-container a {
+  color: #f35353;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form-container a:hover{
+    color: #a63b3b;
+}
+
+/* 🖼️ Contenedor de la imagen */
+.signup-image-container {
+  width: 40dvw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* 🌄 Imagen que se ajusta y se recorta */
+.img-signup {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* puedes poner 'left' si quieres más a la izquierda */
+}
+
+/* 🍰 Logo */
+.logo-img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.signup-content{
+    padding: 0 8dvw;
+    margin-bottom: 100px;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 851px) {
+  .signup-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+  }
+
+  .signup-image-container {
+    display: none;
+  }
+
+  .signup-content{
+    padding: 0;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  .logo-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .login-content {
+    padding: 40px;
+  }
+
+  .signup-form-container h2 {
+    font-size: 30px;
+  }
+
+  .signup-form-container h3 {
+    font-size: 15px;
+  }
+
+  .signup-form-container h3 span {
+    font-size: 18px;
+  }
+}

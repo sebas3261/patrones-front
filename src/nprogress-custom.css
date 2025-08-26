@@ -1,0 +1,14 @@
+/* 🟡 Elimina el circulito */
+#nprogress .spinner {
+  display: none !important;
+}
+
+/* 🟣 Cambia el color de la barrita */
+#nprogress .bar {
+  background: #e27e98 !important; /* Puedes cambiar este color a lo que quieras */
+}
+
+/* 🔵 Ajusta la sombra de la barrita (opcional) */
+#nprogress .peg {
+  box-shadow: 0 0 10px #e27e98, 0 0 5px #e27e98;
+}
